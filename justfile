@@ -9,4 +9,4 @@ clean:
     rmdir ./bin
 
 sloc:
-    tools/cloc-2.06.exe .
+    tools/cloc-2.06.exe . --by-file

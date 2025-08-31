@@ -111,6 +111,13 @@ inline vec3 unit_vector(const vec3& v) {
     return v / v.length();
 }
 
+inline vec3 random_in_unit_disk() {
+    while (true) {
+        auto p = vec3(random_double(-1,1), random_double(-1,1), 0);
+        if (p.length_squared() < 1) return p;
+    }
+}
+
 // TODO: fix this to not be recursive so my CPU doesn't explode
 inline vec3 random_unit_vector() {
     while (true) {
