@@ -7,3 +7,6 @@ build:
 
 clean:
     rmdir ./bin
+
+sloc:
+    tools/cloc-2.06.exe .
