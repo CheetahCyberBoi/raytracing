@@ -3,8 +3,7 @@ run: build
 
 
 build:
-    mkdir ./bin 
-    g++ src/*.c src/*.hpp -o ./bin/exec -lm
+    g++ -g ./src/*.cpp -o ./bin/exec -lm
 
 clean:
     rmdir ./bin
